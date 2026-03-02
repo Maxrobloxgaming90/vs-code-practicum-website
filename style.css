@@ -24,10 +24,6 @@ body {
     color: var(--deep-text);
 }
 
-/* ===============================
-   HEADER
-================================= */
-
 .header {
     padding: 30px 80px;
     background: #f3ecf9;
