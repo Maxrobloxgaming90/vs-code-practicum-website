@@ -1,63 +1,172 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Glammore</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-        <script src="script.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glammore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header class="header">
-    <div class="logo">GLAMMORE</div>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <span class="divider">|</span>
-        <a href="services.html">Services</a>
-        <span class="divider">|</span>
-        <a href="blogs.html">Consultant's Blog</a>
-        <span class="divider">|</span>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <a href="contact.html" class="cta-btn">Book Consultation</a>
+<body>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<header class="header">
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">GLAMMORE</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <span class="divider">|</span>
+            <a href="#about">About</a>
+            <span class="divider">|</span>
+            <a href="services.html">Services</a>
+            <span class="divider">|</span>
+            <a href="blogs.html">Consultant's Blogs</a>
+            <span class="divider">|</span>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
 </header>
-        <div class="notification">
-            <div class="bell" onclick="toggleNotif()">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 7h18s-3 0-3-7"/>
-                    <path d="M13.73 21a2 2 0 01-3.46 0"/>
-                </svg>
-            </div>
-            <span class="badge">3</span>
 
-            <div class="notif-dropdown" id="notifBox">
-                <p>✨ New product launched</p>
-                <p>📢 Consultation slots open</p>
-                <p>💬 New blog posted</p>
-            </div>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="welcome-text">WELCOME TO</p>
+        <h1>GLAMMORE</h1>
+        <p class="tagline"><i>Where Confidence becomes your Glow</i></p>
+        <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+
+    <div class="about-container">
+
+        <!-- LEFT TEXT -->
+        <div class="about-text">
+            <h2>
+                Welcome To <br>
+                <span>Glammore</span>
+            </h2>
+
+            <div class="underline"></div>
+
+            <p>
+                GLAM-MORE is a modern beauty consultation studio designed for those who want clarity,<br/> not confusion. We offer structured, 
+                research-guided assessments that help you truly understand personal presentation.
+            </p>
+
+            <p>
+                At Glam-More, 
+                we help you understand yourself deeply and presenting that 
+                understanding with confidence.
+            </p>
+
+            <p>
+                Located in Quezon City, Glam-More is a multi-level 
+                beauty destination that combines professional consultation, 
+                salon expertise, and data-guided analysis under one roof. Our services are designed 
+                to help individuals understand their unique beauty profile before making decisions.
+            </p>
+
+            <p>
+                <b>Our Philosophy</b><br/><br/>
+
+                <i>"We believe that confidence becomes your glow."</i><br/><br/>
+
+            Every skin type, hair texture, face shape, and 
+undertone is different. Instead of offering one-size-fits-all solutions, we provide structured assessments that identify what truly works for you. Our approach 
+reduces product waste, prevents trial-and-error spending, and promotes long-term results.
+            </p>
+            
+            <p>
+                Some product links may be affiliate partnerships. 
+                Glam-More may earn a small commission at no additional cost to the client. 
+                Product recommendations are based on ingredient compatibility and consultation results.
+            </p>
         </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="about-image">
+            <img src="images/logo.png" alt="Glammore Interior">
+        </div>
+
     </div>
 
-</header>
-        <section class="yess">
+</section>
 
-            <h1>
-                The No. 1 <br>
-                Beauty Consultancy <br>
-                & Product Brand
-            </h1>
+<section class="learn-more-section">
+    <a href="services.html" class="learn-card">
+        <p class="learn-label">LEARN MORE</p>
 
-        <a href="about.html" class="hero-button">About Glammore</a>
-            <div class="bubble b1"></div>
-            <div class="bubble b2"></div>
-            <div class="bubble b3"></div>
+        <h2>
+            Planning to book <br/>
+            a consultation?
+        </h2>
 
-        </section>
-        <script src="script.js"></script>
-    </body>
+        <p class="learn-text">
+            Book and Schedule a Consultation now!
+        </p>
+
+        <p class="learn-label">
+            EXPLORE SERVICES →
+        </p>
+    </a>
+</section>
+
+<section class="learn-more-section">
+    <a href="blogs.html" class="learn-card">
+        <p class="learn-label">LEARN MORE</p>
+
+        <h2>
+            Consultant's Blog
+        </h2>
+
+        <p class="learn-text">
+            Check out the latest blog news from our very own Specialists / Consultants!
+        </p>
+
+        <p class="learn-label">
+            EXPLORE SERVICES →
+        </p>
+    </a>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h2>GLAM-MORE</h2>
+      <p>
+        A modern beauty consultancy platform offering structured skin,
+        hair, and image transformation services.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3 id="contact">Contact</h3>
+      <p>📍 Industria Street, Bagumbayan, 3rd District, Quezon City, Eastern Manila District</p>
+      <p>✉ info@glammore.com</p>
+      <p>📞 +63 923 541 6234</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 GLAM-MORE. All rights reserved.
+  </div>
+</footer>
+</body>
 </html>
