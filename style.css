@@ -874,3 +874,25 @@ body {
     }
 
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* MOBILE + TABLET */
+@media (max-width: 1024px) {
+
+    .nav {
+        display: none; /* hide normal nav */
+    }
+
+    .cta-btn {
+        display: none; /* hide desktop button */
+    }
+
+    .menu-toggle {
+        display: block; /* show hamburger */
+    }
+}
